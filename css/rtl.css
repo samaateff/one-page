@@ -530,24 +530,20 @@ opacity: 0.5;
 .d-flex.forms{
   justify-content: space-evenly;
 }
-.submit-btn{
-  display: flex;
+.subbmit-btn{
+margin: 2em auto;
 width: 120.237px;
-padding: 17.015px 11.343px;
 justify-content: center;
 align-items: center;
-gap: 11.343px;
 background: var(--sdsd, #206499);
 color: #EEE;
-text-align: right;
-font-family: GE SS Two;
-font-size: 18.149px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
 text-align: center;
-margin: auto;
-margin: 2em auto;
+font-family: GE SS Two Light;
+font-size: 18.149px;
+font-weight: 700;
+border: unset !important;
+display: flex;
+padding: 17.015px 11.343px;
 }
 .mrto16{
   margin: 0 -16em;
