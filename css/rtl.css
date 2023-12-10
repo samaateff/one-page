@@ -195,7 +195,7 @@ line-height: 28px; /* 155.556% */
     border: 2px solid #fff;
     border-radius: 50%;
     top: 50%;
-    left: 5.2rem;
+    left: 5rem;
     transform: translateY(-50%);
     transition: border-color 400ms ease;
     border: 1px solid #206499
@@ -210,12 +210,40 @@ line-height: 28px; /* 155.556% */
     border: 2px solid var(--primary-color);
     border-radius: 50%;
     top: 50%;
-    left: 5.2rem;
+    left: 5rem;
     transform: translateY(-50%) scale(0);
     transition: transform 400ms ease;
     background:#206499
   }
+  .radio-buttons label.two.private:before {
+    content: "";
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    top: 50%;
+    left: 2.5rem;
+    transform: translateY(-50%);
+    transition: border-color 400ms ease;
+    border: 1px solid #206499
+  }
   
+  .radio-buttons label.two.private:after {
+    content: "";
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    background-color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    border-radius: 50%;
+    top: 50%;
+    left: 2.5rem;
+    transform: translateY(-50%) scale(0);
+    transition: transform 400ms ease;
+    background:#206499
+  }
   .radio-buttons input[type="radio"]:checked + label::before {
     border-color: var(--primary-color);
   }
@@ -455,7 +483,7 @@ margin-bottom: 1em;
   margin: 1em 0;
   color: #000;
 text-align: right;
-font-size: 14px;
+font-size: 13px;
 font-style: normal;
 font-weight: 700;
 
@@ -531,13 +559,50 @@ margin: 2em auto;
   margin-left: 0;
     margin-right: auto; width: 75%;
   }
+  .radio-buttons label.one.alahly:before,
+  .radio-buttons label.one.alahly:after{
+left: 3rem;
+  }
+  .radio-buttons label.one.cont:before,
+  .radio-buttons label.one.cont:after{
+left: 2.5rem;
+  }
+  .radio-buttons label.one.island:before,
+  .radio-buttons label.one.island:after{
+left: 3rem;
+  }
+  .radio-buttons label.one.enmaa:before,
+  .radio-buttons label.one.enmaa:after{
+left: 3rem;
+  }
+  .radio-buttons label.one.finance:before,
+  .radio-buttons label.one.finance:after{
+left: 6.5rem;
+  }
+  .radio-buttons label.one.yes:before,
+  .radio-buttons label.one.yes:after{
+left: 2.4rem;
+  }
+  .radio-buttons label.two.no:before,
+  .radio-buttons label.two.no:after{
+left: 1rem;
+  }
+  .radio-buttons label.one.enmaa{
+margin-right: -2.5em;
+  }
+  .only-web{
+    margin-right: -2em;
+  }
 @media (max-width:767px) {
   .mrto16{
     margin: unset;
   }
   .d-flex.forms  label{
-margin-right: 2em;
+/* margin-right: 2em; */
 font-size: 12px;
+  }
+  .alahly{
+    margin-right: -1em !important;
   }
   .radio-buttons label.one:before {
     left: 2.5rem;
@@ -569,5 +634,47 @@ font-size: 12px;
 }
 .input-file-div{
  width: 55%;
+}
+.only-ewb{
+  margin-right: unset;
+}
+.radio-buttons label.one.alahly:before, .radio-buttons label.one.alahly:after {
+  left: 2.5rem;
+}
+.radio-buttons label.one:before,
+.radio-buttons label.one:after
+ {
+  left: 3rem;
+}
+.radio-buttons label.one.cont:before, .radio-buttons label.one.cont:after {
+  left: 2rem;
+}
+.radio-buttons label.one.island:before, .radio-buttons label.one.island:after {
+  left: 2.5rem;
+}
+.d-flex.forms {
+  justify-content: space-around;
+  margin-right: 1em;
+}
+.radio-buttons label.one.enmaa:before, .radio-buttons label.one.enmaa:after {
+  left: 2.5rem;
+}
+.radio-buttons label.one.finance:before, .radio-buttons label.one.finance:after {
+  left: 5.6rem;
+}
+.radio-buttons label.one.enmaa {
+  margin-right: 2.1em;
+}
+.radio-buttons label.one.other:before, .radio-buttons label.one.other:after {
+  left: 2.3rem;
+}
+.check-mobile{
+  display: block !important;
+}
+.last-other{
+  margin-right: -1.5em !important;
+}
+.radio-buttons label.one:before, .radio-buttons label.one:after {
+  left: 3.5rem;
 }
 }
